@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .input-styles{
+        @apply w-[90%] min-h-[2em] py-1.5 text-center rounded-md border-2 border-gray-400;
+    }
+    .gray-border{
+        @apply border-2 border-gray-400;
+    }
+    .box-shadow{
+        @apply shadow-sm shadow-gray-600;
+    }
+    .tasks-design{
+        @apply shadow-md shadow-gray-500 bg-[#f6f9ff] p-[2em] rounded-lg text-pretty w-full h-fit flex flex-col items-start md:flex-row space-y-7 md:space-y-0;
+    }
+    .task-container{
+        @apply w-full md:w-[80%] leading-loose px-1 sm:px-5;
+    }
+    .task-btn-frame{
+        @apply flex flex-row flex-wrap md:flex-nowrap justify-around  md:flex-col w-full md:w-[20%] space-y-4 small:space-y-0 md:space-y-5 md:mt-3;
+    }
+    .task-btn{
+        @apply text-white py-1.5 px-[2em] md:px-0 rounded-lg font-semibold;
+    }
+    .completed{
+        @apply bg-green-300;
+    }
+    
+}
